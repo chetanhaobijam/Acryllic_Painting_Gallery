@@ -3,8 +3,9 @@
 :root {
   --primary-black: #333;
   --secondary-red: #b50d10;
+  --tertiary-blue: #03a9f4;
   --body-background: #f9f9f9;
-  --grid-background: #f1f1f1;
+  --flex-background: #f1f1f1;
 }
 
 * {
@@ -15,6 +16,81 @@
 body {
   box-sizing: border-box;
   font-family: Oswald, sans-serif;
+  background-color: var(--body-background);
+  font-size: 16px;
 }
 
+#header {
+  color: var(--primary-black);
+  margin: 3rem auto;
+  text-align: center;
+}
 
+#header #headerTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#header #redHeader {
+  color: var(--secondary-red);
+}
+
+#header p {
+  font-size: 1.5rem;
+}
+.imageFlex {
+  background-color: var(--flex-background);
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  padding: 0.3rem;
+}
+
+.image>img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content .contentTitle {
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content .contentBtn {
+  outline: none;
+  border: 1px solid var(--secondary-red);
+  background-color: var(--secondary-red);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#footer {
+  text-align: center;
+  background-color: var(--primary-black);
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+#footer #creatorName {
+  color: var(--tertiary-blue);
+}
+
+#footer #creatorName a i, #footer #creatorName a:visited i {
+  color: var(--tertiary-blue);
+}
+
+#footer #creatorName a i:hover {
+  color: #fff;
+}
