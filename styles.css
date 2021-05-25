@@ -103,3 +103,42 @@ body {
 #footer #creatorName a i:hover {
   color: #fff;
 }
+
+@media (min-width: 768px) {
+  .imageFlex {
+    flex-direction: row;
+    margin: 3em;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  .content .contentBtn {
+    width: 15ch;
+  }
+  #footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .imageFlex {
+    margin: 5em;
+  }
+  .content .contentTitle {
+    font-size: 2rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width: 1300px) {
+  .imageFlex {
+    margin: 6em 10em;
+  }
+  
+}
