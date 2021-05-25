@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acryllic Painting Gallery</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,7 +30,7 @@
         <button class="contentBtn">Buy Now</button>
       </div>
     </div>
-    <div class="imageFlex">
+    <div class="imageFlex" data-aos="slide-down">
       <div class="image order-2">
         <img src="./images/paint-2.png" alt="Acryllic Painting Two">
       </div>
@@ -39,7 +40,7 @@
         <button class="contentBtn">Buy Now</button>
       </div>
     </div>
-    <div class="imageFlex">
+    <div class="imageFlex" data-aos="fade-right">
       <div class="image">
         <img src="./images/paint-3.png" alt="Acryllic Painting Three">
       </div>
@@ -49,7 +50,7 @@
         <button class="contentBtn">Buy Now</button>
       </div>
     </div>
-    <div class="imageFlex">
+    <div class="imageFlex" data-aos="slide-down">
       <div class="image order-2">
         <img src="./images/paint-4.png" alt="Acryllic Painting Four">
       </div>
@@ -59,7 +60,7 @@
         <button class="contentBtn">Buy Now</button>
       </div>
     </div>
-    <div class="imageFlex">
+    <div class="imageFlex" data-aos="fade-right">
       <div class="image">
         <img src="./images/paint-5.png" alt="Acryllic Painting Five">
       </div>
@@ -76,5 +77,14 @@
   <footer id="footer">
     &copy; 2021. All Rights Reserved. Created by <br> <span id="creatorName">Haobijam Chetan Singh (<a href="https://github.com/chetanhaobijam"><i class="fab fa-github"></i></a>).</span>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
