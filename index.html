@@ -20,7 +20,7 @@
   <!-- End of Header Content -->
 
   <main id="main">
-    <div class="imageFlex">
+    <div class="imageFlex" data-aos="slide-down">
       <div class="image">
         <img src="./images/paint-1.png" alt="Acryllic Painting One">
       </div>
@@ -60,7 +60,7 @@
         <button class="contentBtn">Buy Now</button>
       </div>
     </div>
-    <div class="imageFlex" data-aos="fade-right">
+    <div class="imageFlex" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="3000">
       <div class="image">
         <img src="./images/paint-5.png" alt="Acryllic Painting Five">
       </div>
@@ -81,9 +81,12 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
+      disable: () => {
+        return window.innerWidth < 768;
+      },
       offset: 400,
       duration: 1000,
-      once: true
+      delay: 200
     });
   </script>
 </body>
